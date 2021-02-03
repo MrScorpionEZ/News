@@ -2,18 +2,27 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<title>Заметки</title>
+    <meta charset="UTF-8">
+    <title>Заметки</title>
 </head>
 
 <body>
-<header>
-<h1>Заметки</h1>
-</header>
+    <header>
+    <h1>Заметки</h1>
+    </header>
 
-<div></div>
+    <div>
+    {{#each notes}}
+    <div>
+    <h3>{{title}}</h3>
+    <p>{{text}}</p>
+    </div>
+    {{/each}}
+    </div>
 
-<footer>
-<p>&COPY; NGrigorev</p>
-</footer>
+    <footer>
+    <p>&COPY; MrScorpion</p>
+    </footer>
 </body>
+
+</html>
